@@ -23,7 +23,7 @@
       style = document.createElement('style');
       style.setAttribute('id', 'jss-styles');
       var head = document.getElementsByTagName('head')[0];
-      head.insertBefore(style, head.firstChild);
+      head.appendChild(style);
     }
     var node = document.createTextNode(css.join('\n\n'));
     style.appendChild(node);
